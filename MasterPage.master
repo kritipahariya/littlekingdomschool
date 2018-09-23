@@ -1,0 +1,841 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<%@ Register Assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI" TagPrefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+
+
+   <link href="MyBS/css/bootstrap.min.css" rel="stylesheet">
+    <link href="myStyles/animate.css">
+    
+    
+    <!-- Script Files-->
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <script src="MyBS/js/bootstrap.min.js"></script>
+    <script src="jquery/"></script>
+ <style>
+        body{
+                color: #333;
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+        }
+    </style>
+ 	<meta charset="UTF-8" />
+		    <meta name="viewport" content="width=device-width" />
+				<link rel="stylesheet" type="text/css" href="style1.css" />
+                <link rel="stylesheet" type="text/css" href="style2.css" />
+                <script src="global.min.js"></script>
+                <script src="validation.js"></script>
+                
+<%--
+<script type='text/javascript' src='wonderplugin-tabs-engine.js?ver=2.7'></script>
+--%>
+	
+
+                <title></title>
+		<%--<script type="text/javascript">
+		    window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "http:\/\/www.LKS.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.4"} };
+		    !function (a, b, c) { function d(a) { var b, c, d, e, f = String.fromCharCode; if (!k || !k.fillText) return !1; switch (k.clearRect(0, 0, j.width, j.height), k.textBaseline = "top", k.font = "600 32px Arial", a) { case "flag": return k.fillText(f(55356, 56826, 55356, 56819), 0, 0), b = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 56826, 8203, 55356, 56819), 0, 0), c = j.toDataURL(), b !== c && (k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447), 0, 0), b = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447), 0, 0), c = j.toDataURL(), b !== c); case "emoji4": return k.fillText(f(55358, 56794, 8205, 9794, 65039), 0, 0), d = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55358, 56794, 8203, 9794, 65039), 0, 0), e = j.toDataURL(), d !== e } return !1 } function e(a) { var c = b.createElement("script"); c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c) } var f, g, h, i, j = b.createElement("canvas"), k = j.getContext && j.getContext("2d"); for (i = Array("flag", "emoji4"), c.supports = { everything: !0, everythingExceptFlag: !0 }, h = 0; h < i.length; h++) c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]); c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () { c.DOMReady = !0 }, c.supports.everything || (g = function () { c.readyCallback() }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function () { "complete" === b.readyState && c.readyCallback() })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji))) } (window, document, window._wpemojiSettings);
+		</script>--%>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+
+<meta name="generator" content="WordPress 4.8.4" />
+<style type="text/css" id="gmpMapStyles_1_80009">
+	#google_map_easy_1_80009 {
+        width: 400px;
+        height: 300px;
+        float: ;
+        border: 0px solid ;
+        margin: 0px;
+    }
+	#gmapControlsNum_1_80009 {
+		width:400px	}
+	.gmpMapDetailsContainer#gmpMapDetailsContainer_1_80009 {
+		height:300px;
+	}
+	.gmp_MapPreview#google_map_easy_1_80009 {
+		/*position:absolute;*/
+		width:100%;
+	}
+	#mapConElem_1_80009{
+		width:400px	}
+	</style>    <style type="text/css" media="screen">
+     @media screen and (max-width: 640px) and (min-width: 481px){
+#logo-slider {
+ width: 550px;
+}
+}	#logo-slider-wraper {
+            position:relative;	
+	}
+	.slider-controls {
+            position:absolute;
+            width:1150px;	
+            top: 56px !important;
+	}
+	#logo-slider {
+            position: relative;
+            width: 1150px;
+            height: 150px;
+            margin: 0; padding: 0;
+            overflow: hidden;
+            list-style:none;
+            background:#FF0000;
+            text-align:center;
+	}
+	.slide {
+            list-style:none;
+            margin:0 !important;
+            width:1150px !important;
+	}
+	.slider-controls a {
+            height:40px;
+            width:40px;
+            display:inline-block;
+            text-indent:-9000px;
+	}
+	#prev{
+            background:url(wp-content/plugins/logo-slider/arrows/arrow0.png) no-repeat center;
+            float:right;
+            margin-right:-50px;
+	}	
+	#next{
+            background:url(wp-content/plugins/logo-slider/arrows/arrow0-prev.png) no-repeat center;
+            float:left;
+            margin-left:-50px
+	}	
+    /*
+    ===============================================================
+        --------------------_ Responsive _--------------------
+    ===============================================================
+    */
+	@media screen and (max-width:320px) {
+            #logo-slider-wraper{
+                position:relative !important;
+                width:52% !important;
+                left:42px;
+            }
+            .slider-controls {
+                position: absolute;
+                top: 56px;
+                left:30px;
+                width: 100% !important;
+            }
+            #logo-slider {
+                background:#FF0000;
+                height: 150px;
+                list-style: none outside none;
+                margin: 0;
+                overflow: hidden;
+                padding: 0;
+                position: relative;
+                width: 110% !important;
+            }
+            .slide {
+                list-style: none outside none;
+                margin: 0 !important;
+                width: 100% !important;
+            }
+            #next{
+                background:url(wp-content/plugins/logo-slider/arrows/arrow0-prev.png) no-repeat center;
+                float:left;
+                margin-left:-66px !important;
+            }
+            .logo-img {
+                margin-left:32px;
+            }
+	}
+	@media screen and (min-width:321px) and (max-width:480px){
+            #logo-slider-wraper{
+                position:relative;
+                width:35% !important;
+                left:55px !important;
+            }
+            .slider-controls {
+                position: absolute;
+                top: 56px;
+                width: 100% !important;
+            }
+            #logo-slider {
+                background:#FF0000;
+                height: 150px;
+                list-style: none outside none;
+                margin: 0;
+                overflow: hidden;
+                padding: 0;
+                position: relative;
+                width: 102% !important;
+            }
+            .slide {
+                list-style: none outside none;
+                margin: 0 !important;
+                width: 100% !important;
+            }
+	}
+	@media screen and (min-width:321px) and (max-width:360px){
+            #logo-slider-wraper{
+                position:relative;
+                width:50% !important;
+            }
+            .slider-controls {
+                position: absolute;
+                top: 56px;
+                width: 100% !important;
+            }
+            #logo-slider {
+                background:#FF0000;
+                height: 150px;
+                list-style: none outside none;
+                margin: 0;
+                overflow: hidden;
+                padding: 0;
+                position: relative;
+                width: 100% !impotant;
+            }
+
+            .slide {
+                list-style: none outside none;
+                margin: 0 !important;
+                width: 100% !important;
+            }
+	}
+	@media screen and (min-width:481px) and (max-width:640px){
+            #logo-slider-wraper{
+                position:relative;
+                width:28% !important;
+                left:34px !important;
+            }
+            .slider-controls {
+                position: absolute;
+                top: 56px;
+                width: 100% !important;
+            }
+            #logo-slider {
+                background:#FF0000;
+                height: 150px;
+                list-style: none outside none;
+                margin: 0;
+                overflow: hidden;
+                padding: 0;
+                position: relative;
+                width: 100% !important;
+            }
+            .slide {
+                list-style: none outside none;
+                margin: 0 !important;
+
+                width: 100% !important;
+            }
+	}
+	@media only screen and (min-width:641px) and (max-width:768px){
+            #logo-slider-wraper{
+                position:relative;
+                width:78% !important;
+                left:34px !important
+            }
+            .slider-controls {
+                position: absolute;
+                top: 56px;
+                width: 100% !important;
+            }
+            #logo-slider {
+                background:#FF0000;
+                height: 150px;
+                list-style: none outside none;
+                margin: 0;
+                overflow: hidden;
+                padding: 0;
+                position: relative;
+                width: 100% !important;
+                left:-12px;
+            }
+            .slide {
+                list-style: none outside none;
+                margin: 0 !important;
+                width: 100% !important;
+            }
+	}
+	@media only screen and (min-width:770px){
+            #logo-slider-wraper{
+                position:relative;
+                width:1150px !important;
+                left:34px !important;
+            }
+            .slider-controls {
+                position: absolute;
+                top: 56px;
+                width: 100% !important;
+            }
+            #logo-slider {
+                background:#FF0000;
+                height: 150px;
+                list-style: none outside none;
+                margin: 0;
+                overflow: hidden;
+                padding: 0;
+                position: relative;
+                width: 100% !important;
+            }
+            .slide {
+                list-style: none outside none;
+                margin: 0 !important;
+                width: 1150px !important;
+            }
+	}
+    </style>	
+		<link rel="icon" href="img/school-mono.jpg" sizes="32x32" />
+<link rel="icon" href="img/school-mono.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="img/school-mono.jpg" />
+<meta name="msapplication-TileImage" content="img/school-mono.jpg" />
+				<style>
+				.grid fetScreen bgCover img-Blk { border:1px solid red;}
+				.listGird {border:1px solid red; }
+				</style>
+
+
+   
+  
+</head>
+<body class="home blog">
+    <form id="form1" runat="server">
+ <div id="fb-root"></div>
+
+        
+
+
+
+	
+	<div id="homePage">
+	
+				<!--<a href="#contactInfo" class="getIntouch fancybox"></a>-->
+
+	
+            <header>
+
+
+
+                <div class="top-header clerafix"></div>
+
+                <div class="desk_blk">
+
+
+
+                <div class="logo"><a href="Default.aspx" title="LKS"><img src="img/school-mono.jpg" alt="logo" style="height: 110px;
+                            width: 220px;"></a></div>
+
+
+
+                    <nav class="clearfix">
+
+
+
+                        <div class="menu-Col floatLeft">
+
+
+
+                            <ul class="menuBlock sf-menu clearfix floatRight">
+
+
+
+
+
+                                <li><a href="#"></a>
+
+				<li><a href="#listGird">About Us</a>
+
+           <div class="sf-mega menuBg">
+	<div class="menuSub">
+		<ul>
+		   <!-- <li><a href="facilities.aspx#tab2">The Golden Rule</a></li>
+			<li><a href="facilities.aspx#tab3">Our philosophy</a></li>
+		    <li><a href="message_from_the_board/">Message from the Board</a></li>
+	-->	
+	    <li><a href="about_us.aspx?page=0">The Golden Rule</a></li>
+			<li><a href="about_us.aspx?page=1">Our philosophy</a></li>
+		    <li><a href="about_us.aspx?page=2">Message from the Board</a></li>
+	
+	</ul>
+	</div>
+      </div>
+</li>
+
+
+
+                                <li><a href="#listGird2">Admissions</a>
+<div class="sf-mega menuBg">
+	<div class="menuSub">
+		<ul>
+		    <li><a href="admission.aspx?page=0">Fee Structure</a></li>
+			<li><a href="admission.aspx?page=1"">Information For Parents</a></li>
+		    <li><a href="admission.aspx?page=2"">Code Of Conduct</a></li>
+		</ul>
+	</div>
+      </div>
+</li>
+
+
+
+
+								<li><a href="programs.aspx">Programs</a>
+<div class="sf-mega menuBg">
+	<div class="menuSub">
+		<ul>
+<li><a href="programs.aspx?page=0">Career Counseling</a></li>
+<li><a href="programs.aspx?page=1">Nature Nurture</a></li>
+<li><a href="programs.aspx?page=2">Extra Marks</a></li>
+<li><a href="programs.aspx?page=3">Educomp</a></li>
+<li><a href="programs.aspx?page=4">Next Education</a></li>
+<li><a href="programs.aspx?page=5">CKooh Sports</a></li>
+<li><a href="programs.aspx?page=6">Never Skip</a></li>
+<li><a href="programs.aspx?page=7">Jodo Gyan</a></li>
+		</ul>
+	</div>
+      </div>
+</li>
+<li><a href="facilities.aspx">Facilities</a></li>
+<li><a href="photo_gallery.aspx">Gallery</a></li>
+
+
+
+
+								
+
+
+
+                            </ul>
+
+
+
+                        </div>
+
+
+
+                        <div class="menu-Col floatRight">
+
+
+
+                            <ul class="menuBlock sf-menu clearfix floatLeft">
+
+
+
+                               <li><a href="#listGird6">Life at LKS</a>
+<div class="sf-mega menuBg">
+	<div class="menuSub">
+		<ul>
+		    <li><a href="life_at_lKS.aspx?page=0">Clubs</a></li>
+			<li><a href="life_at_lKS.aspx?page=1">Student Council</a></li>
+		    <li><a href="life_at_lKS.aspx?page=2">Honorarium</a></li>
+<li><a href="life_at_lKS.aspx?page=3">Houses</a></li>
+<li><a href="life_at_lKS.aspx?page=4">Campus Life</a></li>
+
+
+		</ul>
+	</div>
+      </div>
+</li>
+
+
+
+								    
+
+
+
+								
+
+
+
+                                <li><a href="career_at_lks.aspx">Career at LKS</a></li>
+                                
+                             <li><a href="transfer_certificate.aspx">Transfer Certificate</a></li>
+                                
+                                                                                  
+                                
+				<li><a href="contact_us.aspx">Contact Us</a></li>
+
+
+								
+
+
+
+                            </ul>
+
+
+
+                        </div>
+
+
+
+                    </nav>
+
+
+
+                </div>
+
+                <div class="rightNav">
+
+
+
+                    <div class="loginSelect">
+
+
+
+                        <ul class='clearfix'></ul>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+        <div class="mobi_blk">
+			<a href="Default.aspx" class="searchSpec"></i><img src="img/school-mono.jpg" alt="logo" style="height:47px; margin-top:-13px;"></a>
+			<!--<a href="http://www.LKS.org" class="mobileLogo"><img src="img/school-mono.jpg" alt="logo" style="height:60px;"></a>
+			--><a href="#mobileNav" id="menu_trigger"><span><!-- --></span><span><!-- --></span><span><!-- --></span></a>
+            <div id="mobileNav">
+                <ul>  
+                    <li><a href="#listGird">About Us</a>
+						<div class="sf-mega menuBg">
+						<div class="menuSub">
+							<ul>
+								 <li><a href="about_us.aspx?page=0">The Golden Rule</a></li>
+			<li><a href="about_us.aspx?page=1">Our philosophy</a></li>
+		    <li><a href="about_us.aspx?page=2">Message from the Board</a></li>
+	
+							</ul>
+						</div>
+						</div> 
+					</li>
+                    <li><a href="#listGird2">Admissions</a></li>
+                    <div class="sf-mega menuBg">
+							<div class="menuSub">
+								<ul>
+								      <li><a href="admission.aspx?page=0">Fee Structure</a></li>
+			<li><a href="admission.aspx?page=1"">Information For Parents</a></li>
+		    <li><a href="admission.aspx?page=2"">Code Of Conduct</a></li>
+		    		</ul>
+							</div>
+						</div>
+                  
+		    
+                    <li><a href="#listGird3">Programs</a>
+						<div class="sf-mega menuBg">
+							<div class="menuSub">
+								<ul>
+							<li><a href="programs.aspx?page=0">Career Counseling</a></li>
+<li><a href="programs.aspx?page=1">Nature Nurture</a></li>
+<li><a href="programs.aspx?page=2">Extra Marks</a></li>
+<li><a href="programs.aspx?page=3">Educomp</a></li>
+<li><a href="programs.aspx?page=4">Next Education</a></li>
+<li><a href="programs.aspx?page=5">CKooh Sports</a></li>
+<li><a href="programs.aspx?page=6">Never Skip</a></li>
+<li><a href="programs.aspx?page=7">Jodo Gyan</a></li>
+		</ul>
+							</div>
+						</div>
+					</li>
+				    <li><a href="facilities.aspx">Facilities</a></li>
+					<li><a href="photo_gallery.aspx">Gallery</a></li>
+					<li><a href="#listGird6">Life at LKS</a>
+					    <div class="sf-mega menuBg">
+							<div class="menuSub">
+							    <ul>
+								     <li><a href="life_at_lKS.aspx?page=0">Clubs</a></li>
+			<li><a href="life_at_lKS.aspx?page=1">Student Council</a></li>
+		    <li><a href="life_at_lKS.aspx?page=2">Honorarium</a></li>
+<li><a href="life_at_lKS.aspx?page=3">Houses</a></li>
+<li><a href="life_at_lKS.aspx?page=4">Campus Life</a></li>
+
+
+								</ul>
+							</div>
+                        </div>
+					</li>
+					<li><a href="career_at_lks.aspx">Career at LKS</a></li>
+					<li><a href="transfer_certificate.aspx">Transfer Certificate</a></li>
+					<li><a href="contact_us.aspx">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+            </header>
+
+
+
+		</div>
+
+
+
+		
+
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+    <ContentTemplate>
+     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+   
+    
+    </ContentTemplate>
+    
+    </asp:UpdatePanel>
+	 
+
+
+
+
+
+
+
+<div id="contactInfo" class="popupBlk">
+
+
+
+    <div class="geTtouch">
+
+
+
+        <ul>
+
+
+
+            <li><a href="#">LKS OFFICE:</a></li>
+
+
+
+            <li><a href=""> HIGH SCHOOL <br>  0751-2920104 / 9165271987 </a></li>
+
+
+
+            <li><a href="" target="_blank"> JUNIOR WING <br> 0751-2920102 / 860267979  </a></li>
+
+
+
+			<li><a href="" target="_blank"> Support Line <br> 0751-4014010  </a></li>
+
+
+
+        </ul>
+
+
+
+    </div>      
+
+
+
+</div>
+
+
+
+
+
+
+
+<script>
+    // Select all links with hashes
+    jQuery('a[href*="#"]')
+    // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function (event) {
+      // On-page links
+      if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+          // Figure out element to scroll to
+          var target = jQuery(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          // Does a scroll target exist?
+          if (target.length) {
+              // Only prevent default if animation is actually gonna happen
+              event.preventDefault();
+              jQuery('html, body').animate({
+                  scrollTop: target.offset().top - '115'
+              }, 1000, function () {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = jQuery(target);
+                  $target.focus();
+                  if ($target.is(":focus")) { // Checking if the target was focused
+                      return false;
+                  } else {
+                      $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                      $target.focus(); // Set focus again
+                  };
+              });
+          }
+      }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="clear"></div>
+</div>
+<style>
+#pagewrap_css {
+	width: autopx;
+	margin: 20px auto;
+}
+#content_css {
+	width: autopx;
+	float: left;
+	padding: 5px 15px;
+}
+
+#middle_css {
+	width: auto; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+#sidebar_css {
+	width: auto;
+	padding: 5px 15px;
+	float: left;
+}
+@media screen and (max-width: 980px) {
+	
+	#pagewrap_css {
+		width: 94%;
+	}
+	#content_css {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle_css {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#sidebar_css{
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#content_css {
+		width: auto;
+		float: none;
+	}
+	#middle_css {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	#sidebar_css {
+		width: auto;
+		float: none;
+	}
+}
+
+#content_css, #middle_css, #sidebar_css {
+	margin-bottom: 5px;
+}
+
+ #content_css, #middle_css, #sidebar_css{
+	
+}
+</style>
+<footer>
+   <div>
+	<div style="text-align:center;">
+         <h3>Accreditations</h3>
+    </div>
+	
+	
+	
+	                <div id="pagewrap_css" style="width:90%;">
+						<section id="content_css" style="width:auto;">
+							<div class="accor"><center><img src="img/accrediactions/Cbse-logo.png" style="width: 100px;height: 100px;" alt=""></center></div>
+						</section>
+						<section id="content_css" style="width:auto;" >
+							<div class="accor"><center><img src="img/accrediactions/educomp.jpg" style="height: 50px;width: 125px;    margin-top: 30px;" alt=""></center></div>
+						</section>
+						<section id="content_css" style="width:auto;">
+							<div class="accor"><center><img src="img/accrediactions/eduw.gif" style="margin-top: 40px;width: 134px;height: 25px;" alt=""></center></div>
+						</section>
+						<section id="content_css" style="width:auto;">
+							 <div class="accor"><center><img src="img/accrediactions/extramarks-logo.png" style="width: 135px;height: 80px;" alt=""></center></div>
+						</section>
+						<section id="content_css" style="width:auto;">
+							<div class="accor"><center><img src="img/accrediactions/naturenurture.png"  alt="" style="height: 100px;width: 100px;"></center></div>
+						</section>
+						<section id="content_css" style="width:auto;">
+							<div class="accor"><center><img src="img/accrediactions/never-skip.png" style="height: 100px;width: 100px;" alt=""></center></div>
+						</section>
+						<section id="content_css" style="width:auto;">
+							<div class="accor"><center><img src="img/accrediactions/next_education.png" style="height: 90px;width: 145px;" alt=""></center></div>
+						</section>
+					<!--	<section id="content_css" style="width:auto;">
+							 <div class="accor"><center><img src="img/accrediactions/jodo.png" style="height: 100px;width: 100px;" alt=""></center></div>
+						</section>
+						-->
+                </div>
+			</div>     
+</footer>
+<br><br/>
+<footer style=" height: 120px; background-color: white;">
+	<div>
+	    <div style="width:80%; margin:0 auto; color:#608ACF;">
+			 <div style="float:left;">Like us on Facebook to Stay up to<br/> date with the latest LKS activities &nbsp;<a href="https://www.facebook.com/littlekingdomschool.org/"><img src="img/fb.png" style="height:50px; margin-top:-27px; "></a></div>
+			 <div style="float:right;">&nbsp;&nbsp;<a href="http://www.shinesofttech.com" target="_blank">Developed by Shine Software Technology&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+	    </div>
+	</div>
+	<br><br/><br>
+    <div class="container">
+        <div class="footerMenu"></div>
+		<br/>
+        <div class="copy text-center">
+            <p>
+        </div>
+    </div>
+</footer>
+</div>
+      
+    </form>
+</body>
+</html>

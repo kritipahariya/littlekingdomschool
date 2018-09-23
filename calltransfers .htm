@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+       <link href="MyBS/css/bootstrap.min.css" rel="stylesheet">
+    <link href="MyCss/animate.css" rel="stylesheet">
+    <link href="MyCss/my-slider.css"rel="stylesheet">
+    <style>
+        .embed-responsive-16by9 {
+          padding-bottom: 56.25%;
+        }
+
+        .embed-responsive-4by3 {
+          padding-bottom: 75%;
+        }
+    </style>
+ 
+    <!-- Script Files-->
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <script src="MyBS/js/bootstrap.min.js"></script>
+    <script src="jquery/ism-2.2.min.js"></script>
+    
+     <script>
+          
+        $(document).ready(function(){
+  $('.nav li a').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset},2000);
+       return false;
+      }
+    }
+  });
+});
+    </script>
+    
+</head>
+<body>
+
+    <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                 <iframe src="careerlks2.aspx" width="600" height="700" frameborder="0" style="border:0" ></iframe>
+              </div>
+              </div>
+</body>
+</html>

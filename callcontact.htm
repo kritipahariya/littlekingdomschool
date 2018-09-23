@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="MyBS/css/bootstrap.min.css" rel="stylesheet">
+    <link href="MyCss/animate.css" rel="stylesheet">
+    <link href="MyCss/my-slider.css"rel="stylesheet">
+ 
+    <!-- Script Files-->
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <script src="MyBS/js/bootstrap.min.js"></script>
+    <script src="jquery/ism-2.2.min.js"></script>
+    
+     <script>
+          
+        $(document).ready(function(){
+  $('.nav li a').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset},2000);
+       return false;
+      }
+    }
+  });
+});
+    </script>
+</head>
+<body>
+
+    <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                 <iframe src="contact_us_form2.aspx" width="700" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+              <div class="col-md-6">
+                  <h2 class="text animated fadeInDown"style="text-align:center;line-height:36px;font-family:serif;color:#3399ff;font-size:30px;margin-top: 50px;">
+                    Little Kingdom Sr. Sec. School</h2>
+                  <p class="text animated fadeInDown"
+                     style="text-align: center;color: #333;font-size: 13px;font-family:sans-serif;font-weight: 300;">
+                         New Ramnagar, <br>Amkhera, Jagriti Nagar, Adhartal, <br>Jabalpur, Madhya Pradesh 482004
+                  </p>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6">
+                  <h2 class="text animated fadeInDown"style="text-align:center;line-height:36px;font-family:serif;color:#3399ff;font-size:30px;margin-top: 50px;">
+                    Little Kingdom Nursary School</h2>
+                  <p class="text animated fadeInDown"
+                     style="text-align: center;color: #333;font-size: 13px;font-family:sans-serif;font-weight: 300;">
+                         1622/3, Napier Town, <br>Near Home Science College, <br>Napier Town, <br>Jabalpur, Madhya Pradesh 482001
+                  </p>
+              </div>
+              <div class="col-md-6">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.26470790903!2d79.92675131454882!3d23.16053698488337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981ae05ddc9aacb%3A0xda054f02063892e5!2sLittle+Kingdom+School!5e0!3m2!1sen!2sin!4v1512489854185" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+          </div>
+          
+              <div class="col-md-6">
+                  <h2 class="text animated fadeInDown"style="text-align:center;line-height:36px;font-family:serif;color:#3399ff;font-size:30px;margin-top: 50px;">
+                    Call US</h2>
+                  <h3 class="text animated fadeInDown"style="text-align:center;font-family:serif;color:#2567b1;font-size:25px;margin-top: 10px;">
+                    Little Kingdom Nursary School</h3>
+                  <p class="text animated fadeInDown"
+                     style="text-align: center;color: #333;font-size: 13px;font-family:sans-serif;font-weight: 300;">
+                         Napier Town: 0761-2413929;<br>4081929;<br>4038624
+                  </p>
+                  <h3 class="text animated fadeInDown"style="text-align:center;font-family:serif;color:#2567b1;font-size:25px;margin-top: 10px;">
+                    Little Kingdom Sr. Sec. School</h3>
+                  <p class="text animated fadeInDown"
+                     style="text-align: center;color: #333;font-size: 13px;font-family:sans-serif;font-weight: 300;">
+                         Adhartal Office: 9685707032;<br>9826788929
+                  </p>
+                  <h3 class="text animated fadeInDown"style="text-align:center;font-family:serif;color:#2567b1;font-size:25px;margin-top: 10px;">
+                    Mandla Road Office</h3>
+                  <p class="text animated fadeInDown"
+                     style="text-align: center;color: #333;font-size: 13px;font-family:sans-serif;font-weight: 300;">
+                         Mobile Number: 9981170996
+                  </p>
+                  <br>
+                  <p class="text animated fadeInDown"
+                     style="text-align: center;color: #333;font-size: 13px;font-family:sans-serif;font-weight: 300;">
+                         Email: lkschool04@gmail.com
+                  </p>
+                  
+              </div>
+          </div>
+              
+      </div>
+      <!--Contact page close-->
+</body>
+</html>
